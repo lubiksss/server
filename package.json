@@ -1,0 +1,22 @@
+{
+  "name": "test-pm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "backend": "nodemon index.js",
+    "dev": "concurrently \"npm run start\" \"npm run start --prefix client\"",
+    "web-push": "web-push"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "redis": "^3.1.2",
+    "web-push": "^3.4.5"
+  },
+  "devDependencies": {},
+  "description": ""
+}
